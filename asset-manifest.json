@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HO-assess/static/css/main.1075fe50.css",
+    "main.js": "/HO-assess/static/js/main.212a0bcc.js",
+    "static/js/787.85ac2933.chunk.js": "/HO-assess/static/js/787.85ac2933.chunk.js",
+    "static/media/logo.svg": "/HO-assess/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/HO-assess/index.html",
+    "main.1075fe50.css.map": "/HO-assess/static/css/main.1075fe50.css.map",
+    "main.212a0bcc.js.map": "/HO-assess/static/js/main.212a0bcc.js.map",
+    "787.85ac2933.chunk.js.map": "/HO-assess/static/js/787.85ac2933.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1075fe50.css",
+    "static/js/main.212a0bcc.js"
+  ]
+}
