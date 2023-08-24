@@ -29,7 +29,9 @@ function Home(){
                 console.log(data.meals)
                 setMeals(data.meals)
             })
-            .catch(error => console.log(error));
+            .catch(
+                setMeals(null)
+            );
         }
     }
 
@@ -58,8 +60,8 @@ function Home(){
 
             
 
-            {meals.length >0 && <h1 id = "all-recipes-title">All Recipes</h1>}
-            {meals.length >0 && (
+            {meals && meals.length>0 && <h1 id = "all-recipes-title">All Recipes</h1>}
+            {meals && meals.length>0 && (
                 <div>
                     <button onClick= {sortAscending}>Ascending</button>
                     <button onClick={sortDescending}>Descending</button>
@@ -72,7 +74,7 @@ function Home(){
                 </div>
             </div> */}
             <div className="container">
-                { (meals==null)? <p>not found</p> : meals.map((meal)=>{
+                { (meals==null)? <p>no meals with that ingredient, try again...</p> : meals.map((meal)=>{
                     return(
                         <div id="meal" key = {meal.idMeal}>
                             <Meal meal = {meal}/>
